@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 22 19:01:08 2021
+# Process ID: 4154
+# Current directory: /home/dingyi/src/vivado/add/add.runs/synth_1
+# Command line: vivado -log adder_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder_display.tcl
+# Log file: /home/dingyi/src/vivado/add/add.runs/synth_1/adder_display.vds
+# Journal file: /home/dingyi/src/vivado/add/add.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source adder_display.tcl -notrace

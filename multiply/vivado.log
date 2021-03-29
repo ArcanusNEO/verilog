@@ -1,0 +1,347 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 22 18:28:34 2021
+# Process ID: 3840
+# Current directory: /home/dingyi/src/vivado/multiply
+# Command line: vivado
+# Log file: /home/dingyi/src/vivado/multiply/vivado.log
+# Journal file: /home/dingyi/src/vivado/multiply/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project multiply . -part xc7a200tfbg676-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+add_files -norecurse -scan_for_includes {/home/dingyi/src/vivado/multiply/tb.v /home/dingyi/src/vivado/multiply/multiply_display.v /home/dingyi/src/vivado/multiply/multiply.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Mon Mar 22 18:34:38 2021] Launched synth_1...
+Run output will be captured here: /home/dingyi/src/vivado/multiply/multiply.runs/synth_1/runme.log
+file mkdir /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1
+file mkdir /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new
+close [ open /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new/multiply.xdc w ]
+add_files -fileset constrs_1 /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new/multiply.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Mar 22 18:37:27 2021] Launched synth_1...
+Run output will be captured here: /home/dingyi/src/vivado/multiply/multiply.runs/synth_1/runme.log
+add_files -norecurse -scan_for_includes /home/dingyi/src/CPU_LAB_fpga_a7_20170217/source_code/lcd_module.dcp
+import_files -norecurse /home/dingyi/src/CPU_LAB_fpga_a7_20170217/source_code/lcd_module.dcp
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Mar 22 18:39:51 2021] Launched synth_1...
+Run output will be captured here: /home/dingyi/src/vivado/multiply/multiply.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-454] Reading design checkpoint '/home/dingyi/src/vivado/multiply/multiply.srcs/sources_1/imports/source_code/lcd_module.dcp' for cell 'lcd_module'
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/clk_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[32]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[33]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[34]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[35]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[36]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[37]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[38]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[39]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_valid_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[24]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[25]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[26]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[27]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[28]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[29]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[30]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[31]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, lcd_module/resetn_IBUF_inst, from the path connected to top-level port: resetn 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, ct_rstn_OBUF_inst, from the path connected to top-level port: ct_rstn 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, ct_scl_OBUF_inst, from the path connected to top-level port: ct_scl 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_wr_OBUF_inst, from the path connected to top-level port: lcd_wr 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_rst_OBUF_inst, from the path connected to top-level port: lcd_rst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_rs_OBUF_inst, from the path connected to top-level port: lcd_rs 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_rd_OBUF_inst, from the path connected to top-level port: lcd_rd 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_cs_OBUF_inst, from the path connected to top-level port: lcd_cs 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_bl_ctr_OBUF_inst, from the path connected to top-level port: lcd_bl_ctr 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[31]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[30]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[29]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[28]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[27]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[26]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[25]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[24]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_valid_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+Parsing XDC File [/home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new/multiply.xdc]
+Finished Parsing XDC File [/home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new/multiply.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6908.234 ; gain = 0.000 ; free physical = 11348 ; free virtual = 13503
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 7143.199 ; gain = 530.379 ; free physical = 11239 ; free virtual = 13398
+close_design
+launch_runs impl_1 -jobs 8
+[Mon Mar 22 18:42:01 2021] Launched impl_1...
+Run output will be captured here: /home/dingyi/src/vivado/multiply/multiply.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7533.914 ; gain = 0.000 ; free physical = 10593 ; free virtual = 12789
+Restored from archive | CPU: 0.200000 secs | Memory: 5.548424 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7533.914 ; gain = 0.000 ; free physical = 10593 ; free virtual = 12789
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7533.914 ; gain = 0.000 ; free physical = 10654 ; free virtual = 12850
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 22 18:43:53 2021] Launched impl_1...
+Run output will be captured here: /home/dingyi/src/vivado/multiply/multiply.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:06:40
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn2jsn3" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn2jsn3jsn-DLC9-usb3.6" may be locked by another hw_server.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 22 18:50:49 2021...

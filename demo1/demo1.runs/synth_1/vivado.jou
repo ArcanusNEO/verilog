@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 22 18:13:09 2021
+# Process ID: 4926
+# Current directory: /home/dingyi/src/vivado/demo1/demo1.runs/synth_1
+# Command line: vivado -log add.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source add.tcl
+# Log file: /home/dingyi/src/vivado/demo1/demo1.runs/synth_1/add.vds
+# Journal file: /home/dingyi/src/vivado/demo1/demo1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source add.tcl -notrace

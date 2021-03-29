@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 22 18:28:34 2021
+# Process ID: 3840
+# Current directory: /home/dingyi/src/vivado/multiply
+# Command line: vivado
+# Log file: /home/dingyi/src/vivado/multiply/vivado.log
+# Journal file: /home/dingyi/src/vivado/multiply/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project multiply . -part xc7a200tfbg676-2
+add_files -norecurse -scan_for_includes {/home/dingyi/src/vivado/multiply/tb.v /home/dingyi/src/vivado/multiply/multiply_display.v /home/dingyi/src/vivado/multiply/multiply.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+file mkdir /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1
+file mkdir /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new
+close [ open /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new/multiply.xdc w ]
+add_files -fileset constrs_1 /home/dingyi/src/vivado/multiply/multiply.srcs/constrs_1/new/multiply.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -norecurse -scan_for_includes /home/dingyi/src/CPU_LAB_fpga_a7_20170217/source_code/lcd_module.dcp
+import_files -norecurse /home/dingyi/src/CPU_LAB_fpga_a7_20170217/source_code/lcd_module.dcp
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
